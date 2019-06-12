@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background-color:  #9fdf9f;
+}
+
+h1{
+    font-weight: bolder;
+    font: 45px;
+    letter-spacing: 1.5px;
+    margin-bottom: 0px; 
+    color: #0d260d;
+    text-shadow: 3px bisque;
+}
+
+.inputSection{
+    margin: 50px 0px 50px 0px;
+    width: 500px;
+
+}
+
+.inputs{
+    width:inherit;
+    display:flex;
+    direction: column;
+
+}
+
+input{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: inherit;
+}
+
+.addOption{
+    margin-top: 10px;
+}
+
+button{
+    background-color: bisque;
+    color: #0d260d;
+}
