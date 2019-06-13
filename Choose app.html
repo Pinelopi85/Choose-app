@@ -17,7 +17,7 @@
         <div class="resultSection"> </div>
 
     </div>
-    <button>Choose</button>
+    <button class="submit">Choose</button>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"> 
     </script>
@@ -27,9 +27,23 @@
         var add_option = function() {
             $('.inputs').append('<input></input>') 
             }
-            $('.addOption').click(add_option)
-        
-    })
+            $('.addOption').click(add_option)        
+    
+        var options = []
+
+        var submit = function() {
+        $('.inputSection').hide()
+        $('.resutSection').css('display', 'flex')
+        $('input').each(function(){
+            options.push($(this.val ))
+        })
+
+        var winner = options [Math.floor(Math.random() * options.length)]
+            console.log(winner)
+            $('.resultSection').text(winner)
+        }
+        $('.submit').click(submit)
+    }) 
     </script>
 </body>
 </html>
